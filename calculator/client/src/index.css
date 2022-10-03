@@ -1,9 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
+:root {
+  --primary-border: 1px solid #bfa7f2;
+  --primary-color: #bfa7f2;
+  --secondary-color: #e9c849;
+  --box-shadow: 0px 9px 15px -3px rgb(142, 129, 170);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
 }
 
 body {
@@ -12,26 +22,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .screen {
   height: 4rem;
   margin-bottom: 4rem;
+  background-color: white;
+  border: var(--primary-border);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
 }
 
 .wrapper {
-  background: #bad1e8;
+  background: var(--primary-color);
   width: 20rem;
   padding: 2rem;
   margin-top: 4rem;
   border-radius: 1rem;
-    box-shadow: 0px 9px 15px -3px rgba(0,0,0,0.1);
+  box-shadow: var(--box-shadow);
 }
 
 .buttonBox {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
+}
 
+.button {
+  background-color: var(--secondary-color);
+  border-radius: 2rem;
+  padding: 1rem;
+  border: var(--primary-border);
+  box-shadow: var(--box-shadow);
+}
+
+.footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.7rem;
 }
