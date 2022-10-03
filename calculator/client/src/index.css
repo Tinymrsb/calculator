@@ -56,10 +56,27 @@ body {
   padding: 1rem;
   border: var(--primary-border);
   box-shadow: var(--box-shadow);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  border: 1px dotted #4e4168;
 }
 
 .footer {
   margin-top: 4rem;
   text-align: center;
   font-size: 0.7rem;
+}
+
+.equals {
+  background-color: rgb(227, 179, 89);
+  grid-column: 3/5;
+}
+
+.opt {
+  background-color: aquamarine;
 }
